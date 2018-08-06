@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -18,7 +19,7 @@ import static android.content.Context.ACTIVITY_SERVICE;
 public class TaskMonitorClass extends Service {
 
     private Timer timer;
-    List<String> packages;
+    List<String> packages = new ArrayList<>();
 
     @Override
     public void onCreate() {
